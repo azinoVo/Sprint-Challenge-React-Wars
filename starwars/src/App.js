@@ -41,10 +41,14 @@ class App extends Component {
     const massArray = this.state.starwarsChars.map(index => {
       return index.mass;
     });
+    const eyeArray = this.state.starwarsChars.map(index => {
+      return index.eye_color;
+    });
     const lukeSkywalker = nameArray[0];
     console.log(lukeSkywalker);
     console.log(genderArray);
     console.log(massArray);
+    console.log(eyeArray);
 
     return (
       <div className="App">
@@ -56,52 +60,62 @@ class App extends Component {
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={0}
              />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={1}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={2}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={3}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={4}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={5}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={6}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={7}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={8}  />
           <Characters 
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            eye={eyeArray}
             charNum={9}  />
         </div>
       </div>

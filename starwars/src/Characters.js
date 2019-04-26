@@ -6,6 +6,7 @@ const Characters = props => {
             <h3>{props.char[props.charNum]}</h3>
                 <p>Gender: {props.gender[props.charNum]}</p>
                 <p>Mass: {props.mass[props.charNum]}</p>
+                <p>Eye-Color: {props.eye[props.charNum]} </p>
         </div>
     )  
 }
