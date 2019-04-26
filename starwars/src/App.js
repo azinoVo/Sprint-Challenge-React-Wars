@@ -56,16 +56,53 @@ class App extends Component {
             char={nameArray}
             gender={genderArray}
             mass={massArray}
+            charNum={0}
              />
-          {/* <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} />
-          <Character char={[]} /> */}
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={1}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={2}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={3}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={4}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={5}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={6}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={7}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={8}  />
+          <Characters 
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            charNum={9}  />
         </div>
       </div>
     );
