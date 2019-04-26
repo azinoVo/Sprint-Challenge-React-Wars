@@ -1,5 +1,8 @@
 import React from 'react';
 
+// This component takes a prop which is an array of things
+// and render out the relevent one based on index number
+
 const Characters = props => {
     return (
         <div className="characterBox">
