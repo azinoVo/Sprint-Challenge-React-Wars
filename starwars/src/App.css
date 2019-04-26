@@ -1,8 +1,23 @@
 .App {
   text-align: center;
+  height:2000px;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+}
+
+.charContainer {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height:auto;
+}
+
+.characterBox {
+  width:100%;
+  height:auto;
+  margin:2%;
+  background-color:lightblue;
 }
 /* write your parent styles in here for your App.js */

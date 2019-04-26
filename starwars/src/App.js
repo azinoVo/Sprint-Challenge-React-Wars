@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Characters from './Characters.js';
 
 class App extends Component {
   constructor() {
@@ -29,10 +30,46 @@ class App extends Component {
       });
   };
 
+
   render() {
+
+    const nameArray = this.state.starwarsChars.map(index => {
+      return index.name;
+    });
+
+    const genderArray = this.state.starwarsChars.map(index => {
+      return index.gender;
+    });
+
+    const massArray = this.state.starwarsChars.map(index => {
+      return index.mass;
+    });
+
+    const eyeArray = this.state.starwarsChars.map(index => {
+      return index.eye_color;
+    });
+
+    const lukeSkywalker = nameArray[0];
+    console.log(lukeSkywalker);
+    console.log(genderArray);
+    console.log(massArray);
+    console.log(eyeArray);
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        {/* This is the div for displaying the characters after passing each object from the array. 
+        Work in Progress */}
+        <div className='charContainer'>
+          {nameArray.map((_,index)=>
+            <Characters
+            char={nameArray}
+            gender={genderArray}
+            mass={massArray}
+            eye={eyeArray}
+            charNum={index} />
+          )}
+        </div>
       </div>
     );
   }
