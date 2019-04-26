@@ -32,12 +32,27 @@ class App extends Component {
 
 
   render() {
-    const luke = [this.state.starwarsChars[0]];
-    console.log(luke);
+    const skywalker = this.state.starwarsChars.map(index => {
+      return index.name;
+    });
+    console.log(skywalker);
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {/* <Characters name={this.state.starwarsChars[0]}/> */}
+        {/* This is the div for displaying the characters after passing each object from the array. */}
+        {/* <div>
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+          <Character char={this.state.starwarsChars[]} />
+        </div> */}
       </div>
     );
   }
