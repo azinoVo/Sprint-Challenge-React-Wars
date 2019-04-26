@@ -51,7 +51,7 @@ class App extends Component {
         <h1 className="Header">React Wars</h1>
         {/* This is the div for displaying the characters after passing each object from the array. 
         Work in Progress */}
-        <div>
+        <div className='charContainer'>
           <Characters 
             char={nameArray}
             gender={genderArray}
